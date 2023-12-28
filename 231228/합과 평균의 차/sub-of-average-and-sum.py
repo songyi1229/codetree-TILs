@@ -4,6 +4,6 @@ b = int(b)
 c = int(c)
 h = a+b+c
 p = (a+b+c)/3
-print(h)
-print(p)
-print(h-p)
+print(int(h))
+print(int(p))
+print(int(h-p))
