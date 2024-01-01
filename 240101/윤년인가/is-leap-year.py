@@ -10,4 +10,4 @@ if (y%4==0):
         print("true")
         
 else:
-    print("fasle")
+    print("false")
