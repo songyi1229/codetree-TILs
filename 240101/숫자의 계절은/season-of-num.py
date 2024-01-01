@@ -6,5 +6,5 @@ elif m>=9:
     print("Fall")
 elif m>=6:
     print("Summer")
-else:
+elif m>=3:
     print("Spring")
