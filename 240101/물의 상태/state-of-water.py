@@ -4,5 +4,5 @@ if t<0:
     print("ice")
 elif t>100:
     print("vapor")
-else:
+elif t>0:
     print("water")
