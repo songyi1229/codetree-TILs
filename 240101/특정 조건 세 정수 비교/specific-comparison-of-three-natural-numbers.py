@@ -5,5 +5,12 @@ b = int(b)
 c = int(c)
 min = min(arr)
 
-print(int(a==min),end=" ")
-print(int(a==b==c))
+if a==min:
+    print(1, end=" ")
+else:
+    print(0, end=" ")
+
+if a==b==c:
+    print(1, end=" ")
+else:
+    print(0, end=" ")
