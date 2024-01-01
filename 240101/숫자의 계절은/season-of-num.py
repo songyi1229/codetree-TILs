@@ -1,6 +1,6 @@
 m = int(input())
 
-if m == 12 and m==1 and m==2:
+if m == 12 or m==1 or m==2:
     print("Winter")
 elif m>=9:
     print("Fall")
