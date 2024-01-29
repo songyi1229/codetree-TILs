@@ -7,4 +7,4 @@ for i in range(n):
 mean = sum/n
 
 print(sum, end=" ")
-print(mean)
+print(f"{mean:0.1f}")
