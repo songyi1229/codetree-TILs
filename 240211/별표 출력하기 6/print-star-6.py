@@ -10,6 +10,6 @@ for i in range(n):
 for i in range(n-1):
     for _ in range(n-2-i, 0, -1):
         print(" ", end=" ")
-    for _ in range(n+(2*i)):
+    for _ in range(3+(2*i)):
         print("*", end=" ")
     print()
