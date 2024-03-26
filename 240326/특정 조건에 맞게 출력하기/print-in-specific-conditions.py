@@ -1,9 +1,9 @@
-arr = list(map(int, input().split()))
-
-for i in arr:
+array = list(map(int, input().split()))
+arr=[]
+for i in array:
     if i == 0:
-        arr.pop()
         break
+    arr.append(i)
         
         
 
