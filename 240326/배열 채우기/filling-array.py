@@ -1,9 +1,11 @@
 arr = list(map(int, input().split()))
 
 
-for i in range(10):
-    if arr[i] == 0:
-        arr.pop()
-arr = arr[::-1]
-for j in arr:
-    print(j, end=" ")
+cnt = 0
+for i in arr:
+    if i == 0:
+        break
+    cnt += 1
+
+for i in range(cnt-1, -1, -1):
+    print(arr[i], end=" ")
