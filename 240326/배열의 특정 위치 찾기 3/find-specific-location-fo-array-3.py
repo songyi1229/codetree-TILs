@@ -1,9 +1,10 @@
 arr = list(map(int, input().split()))
 
-sum_val = 0
+
 
 for i in arr:
-    sum_val += i
     if i == 0:
+        k=i
         break
-print(sum_val)
+
+print(arr[k-1]+arr[k-2]+arr[k-3])
