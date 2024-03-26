@@ -2,8 +2,8 @@ arr = list(map(int, input().split()))
 
 
 
-for i in arr:
-    if i == 0:
+for i in range(len(arr)):
+    if arr[i] == 0:
         k=i
         break
 
