@@ -11,7 +11,7 @@
 
 n, q = map(int, input().split())
 nums = list(map(int, input().split()))
-idx = -1
+
 for i in range(q):
     ques = list(map(int, input().split()))
     if ques[0]==1:
@@ -20,16 +20,10 @@ for i in range(q):
 
     elif ques[0]==2: 
         s = ques[1]
-        for k, val in enumerate(nums):
-            if val == s:
-                idx = k
-                break
-                     
-
-        if idx == -1:
-            print(0)  
-        else:
-            print(idx+1) 
+        idx = -1
+        if s in nums:
+            idx = nums.index(s)
+        print(idx+1) 
 
     elif ques[0]==3:  
 
