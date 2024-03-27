@@ -4,12 +4,14 @@ sum_val = 0
 while True:
     if a<=1:
         break
-    a = a//b
     
     count[a%b] += 1
+    a = a// b
 
+
+    
 
 for i in count:
     sum_val += i**2
-    
-print(sum_val)
+
+print(f"{sum_val}")
