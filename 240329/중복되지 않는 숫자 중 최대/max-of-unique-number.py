@@ -3,6 +3,7 @@ arr = list(map(int, input().split()))
 
 max_n = max(arr)
 cnt = 0
+cnt_s = 0
 new_arr = []
 for i in arr:
     if i == max_n:
@@ -11,10 +12,15 @@ for i in arr:
         new_arr.append(i)
 
 max_s_n = max(new_arr)
+for j in new_arr:
+    if j == max_s_n:
+        cnt_s += 1
+
+
 
 if cnt == 1:
     print(max_n)
-elif cnt >= 2:
+elif cnt_s == 1:
     print(max_s_n)
 else:
     print(-1)
