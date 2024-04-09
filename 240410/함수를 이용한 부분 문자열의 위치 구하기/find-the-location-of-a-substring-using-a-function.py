@@ -12,12 +12,11 @@ def is_same(n):
 
 
 def is_seq():
+    
     for i in range(n1-n2+1):
         if is_same(i):
             return i
-    return False
+    return -1
 
-if is_seq():
-    print(is_seq())
-else:
-    print(-1)
+
+print(is_seq())
