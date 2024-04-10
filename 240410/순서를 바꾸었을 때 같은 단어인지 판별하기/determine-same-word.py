@@ -1,20 +1,5 @@
-a = list(input())
-b = list(input())
+str1 = input()
+str2 = input()
 
-
-
-def judge(a,b):
-    if len(a) != len(b):
-        return False
-    for i,j in zip(a,b):
-        if i==j:
-            return True
-    return False
-
-a.sort()
-b.sort()
-
-if judge(a,b):
-    print('Yes')
-else:
-    print('No')
+# 각 문자열을 정렬했을 때 두 문자열이 일치하는지 비교합니다.
+print("Yes" if sorted(str1) == sorted(str2) else "No")
