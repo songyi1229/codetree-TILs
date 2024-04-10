@@ -1,0 +1,5 @@
+word = input()
+word = list(word)
+word.sort()
+new = ''.join(word)
+print(new)
