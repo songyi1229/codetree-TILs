@@ -8,7 +8,9 @@ def timetomin(h, m):
 
     return (h*60 + m)-(11*60+11)
 
-if a<11 and b<11 and c<11:
+diff = daytomin(a)+timetomin(b, c)
+
+if diff<0:
     print("-1")
 else:
-    print(daytomin(a) + timetomin(b, c))
+    print(diff)
