@@ -6,8 +6,8 @@ ary = [
     tuple(map(int, input().split()))
     for _ in range(n)
     ]
-
-zero_ary = [0] * 100
+max_val = max(max(ary))
+zero_ary = [0] * (max_val+1)
 
 for a, b in ary:
     for i in range(a, b+1):
