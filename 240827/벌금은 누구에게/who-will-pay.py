@@ -10,7 +10,8 @@ for _ in range(1, m):
     num = 0
 
 for a,b in enumerate(lst):
-    if b == k:
+    if k not in lst:
+        break
+    elif b == k:
         print(a)
-    elif k not in lst:
-        print(-1)
+    print(-1)
