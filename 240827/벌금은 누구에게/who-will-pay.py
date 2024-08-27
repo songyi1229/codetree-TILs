@@ -10,8 +10,8 @@ for _ in range(1, m):
     num = 0
 
 ans = -1
-for a,b in enumerate(lst):
-    if b >= k:
-        ans = a
+for i in lst:
+    if lst[i] >= k:
+        ans = i
 
 print(ans)
