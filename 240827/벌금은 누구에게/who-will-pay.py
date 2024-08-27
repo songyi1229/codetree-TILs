@@ -13,5 +13,6 @@ ans = -1
 for i in lst:
     if lst[i] >= k:
         ans = i
+        break
 
 print(ans)
