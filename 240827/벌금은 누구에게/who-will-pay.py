@@ -9,9 +9,9 @@ for _ in range(1, m):
     lst[num] += 1
     num = 0
 
+ans = -1
 for a,b in enumerate(lst):
-    if k not in lst:
-        break
-    elif b == k:
-        print(a)
-    print(-1)
+    if b >= k:
+        ans = a
+
+print(ans)
