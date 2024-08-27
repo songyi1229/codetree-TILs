@@ -16,3 +16,22 @@ for i in lst:
         break
 
 print(ans)
+
+
+ary = [
+    int(input())
+    for _ in range(m)
+]
+
+lst = [0]*(n+1)
+
+ans = -1
+
+for i in ary:
+    lst[i] += 1
+
+    if lst[i] >= k:
+        ans = i
+        break
+
+print(ans)
