@@ -9,9 +9,8 @@ for _ in range(1, m):
     lst[num] += 1
     num = 0
 
-max_val = 0
 for a,b in enumerate(lst):
     if b == k:
         print(a)
-    elif b > k:
+    elif k not in lst:
         print(-1)
