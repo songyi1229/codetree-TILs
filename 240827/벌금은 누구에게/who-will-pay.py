@@ -11,8 +11,7 @@ for _ in range(1, m):
 
 max_val = 0
 for a,b in enumerate(lst):
-    if lst[a] > max_val:
-        max_val = b
-        max_idx = a
-    
-print(max_idx)
+    if b == k:
+        print(a)
+    elif b > k:
+        print(-1)
