@@ -1,28 +1,23 @@
-# for elem in arr:
-#     placed[elem] = 1
-
+MAX_NUM = 10000
 n, k = tuple(map(int, input().split()))
 
-placed = [0] * 101
-arr = [0] * (n+1)
+placed = [0] * (MAX_NUM+1)
 
 max_elem = 0
 for _ in range(n):
     elem, point = input().split()
     elem = int(elem)
-    arr.append(elem)
+
     if point == 'G':
         placed[elem] = 1
     else:
         placed[elem] = 2
-    if elem > max_elem:
-        max_elem = elem
 
-arr.sort()
+
 
 ans = 0
 
-for i in arr:
+for i in range(MAX_NUM - k + 1):
     max_score = 0
     for j in range(i, i+k+1):
         max_score += placed[j]
