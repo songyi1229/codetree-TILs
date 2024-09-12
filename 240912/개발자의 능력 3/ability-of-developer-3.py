@@ -1,5 +1,5 @@
 arr_str = input().split()
-
+n = len(arr_str)
 arr = []
 for i in arr_str:
     i = int(i)
@@ -14,9 +14,9 @@ def get_diff(a, b, c):
 min_val = 100
 ans = 0
 
-for i in range(0, 4):
-    for j in range(1, 5):
-        for k in range(2, 6):
+for i in range(0, n-2):
+    for j in range(i+1, n-1):
+        for k in range(j+1, n):
             ans = get_diff(i,j,k)
 
             if ans < min_val:
