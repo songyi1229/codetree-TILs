@@ -11,7 +11,7 @@ def get_diff(a, b, c):
     return abs(team1 - team2)
 
 
-min_val = 100
+min_val = 1000000
 ans = 0
 
 for i in range(0, n-2):
