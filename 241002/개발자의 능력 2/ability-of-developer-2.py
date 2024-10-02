@@ -1,3 +1,7 @@
+import sys
+
+min_val = sys.maxsize
+
 arr = tuple(map(int, input().split()))
 
 
@@ -11,7 +15,7 @@ def get_team(x,y,z,w):
     min_team = min(team_arr)
     return (max_team - min_team)
 
-min_val = 100
+
 
 #첫번째 팀원
 for i in range(6):
