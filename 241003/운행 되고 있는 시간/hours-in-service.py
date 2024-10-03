@@ -5,29 +5,24 @@ arr = [
 ]
 
 
-def find_time(a, b, c, d):
-    check = []
+def find_time(a, b):
     for i in range(a, b):
         if i not in check:
             check.append(i)
-    for ii in range(c, d):
-        if ii not in check:
-            check.append(ii)
     
-    time = len(check)
-    
-    return time
+    return len(check)
 
 
 ans = 0
 
 for i in range(n):
-    for j in range(i+1, n):
-        x1, y1 = arr[i]
-        x2, y2 = arr[j]
+    check=[]
+    for j in range(n):
+        if j==i:
+            continue
+        x1, y1 = arr[j]
 
-        time = find_time(x1, y1, x2, y2)
-
-        ans = max(ans, time)
+        time = find_time(x1, y1)
+    ans = max(ans, time)
 
 print(ans)
